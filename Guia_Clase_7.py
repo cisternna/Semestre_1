@@ -78,7 +78,7 @@ if len(str(numero)) == 1:
     print(numero*numero)
 elif len(str(numero)) == 2:
     print(numero*2)
-elif len(str(numero)) ==3:
+elif len(str(numero)) == 3:
     print(numero-100)
 else:
     print('numero no valido')
