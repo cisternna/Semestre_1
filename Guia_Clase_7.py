@@ -62,7 +62,6 @@ if year%4 == 0:
 elif year%100 == 0:
     if year%400 == 0:
         print(f'el año {year} es biciesto')
-
 else: 
     print(f'el año {year} no es biciesto')
 
