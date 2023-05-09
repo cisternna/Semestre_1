@@ -5,7 +5,7 @@ def suma_numeros():
     lista = []
     print('cuando quiera dejar de agregar numeros escriba "listo" ')
     while True:
-        numeros = (input('Ingrese el numero: '))
+        numeros = input('Ingrese el numero: ')
         if numeros == 'listo':
             break
         lista.append(int(numeros))
