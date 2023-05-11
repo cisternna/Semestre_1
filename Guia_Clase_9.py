@@ -4,47 +4,25 @@
 # ¿Cuántos leds se encienden cuando el reloj marca la hora ingresada por el usuario?.  Formato: 01:30:23.
 
 hora = input('Ingrese la hora (formato:  00:00:00) ')
-leds = 0
-
+leds = [6, 2, 5, 5, 4, 5, 6, 3, 7, 5]
+total_leds = 4
 for i in hora:
-    if i == ':':
-        leds += 2
-    elif i == '0':
-        leds += 6
-    elif i == '1':
-        leds += 2
-    elif i == '2':
-        leds += 5
-    elif i == '3':
-        leds += 5
-    elif i == '4':
-        leds += 4
-    elif i == '5':
-        leds += 5
-    elif i == '6':
-        leds += 6
-    elif i == '7':
-        leds += 3
-    elif i == '8':
-        leds += 7
-    elif i == '9':
-        leds += 6
-    
-print(leds)
+    if i != ':':
+        total_leds += leds[int(i)]
+
+print(total_leds)
 
 # solicite al usuario un número natural y a continuación devuelva su equivalente en base binaria.
 
 numero = int(input('Ingrese un numero: '))
 output = ''
-
 while numero != 0:
     if numero%2 == 1:
         numero = (numero-1)/2
-        output += '1'
+        output = '1' + output
     else:
         numero = numero/2
-        output += '0'
-
+        output = '0' + output
 print(output)
 
 
@@ -81,11 +59,4 @@ if numero1 == numero:
     print('El numero ingresado es Perfecto')
 
 # Biprimo
-
-# no lo pude resolver pero en la teoria deberia ser lo siguiente:
-# 1. Por cada numero en el rango del numero ingresado comprobar si estos son primos y guardarlos en una lista
-# 2. multiplicar cada numero de la lista por todos los numeros en la lista y comprobar si el producto de una
-# de estas multiplicaciones es igual al numero ingresado por el usuario, en cuyo caso seria biprimo.
-
-
 
