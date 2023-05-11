@@ -1,17 +1,11 @@
 # Realizar un algoritmo que resuelva el cuadrado de los N primeros números naturales 
 # N es ingresado por el usuario.
 
-def suma_numeros():
-    lista = []
-    print('cuando quiera dejar de agregar numeros escriba "listo" ')
-    while True:
-        numeros = input('Ingrese el numero: ')
-        if numeros == 'listo':
-            break
-        lista.append(int(numeros))
-    print(sum(lista))
+num = int(input('Ingrese el numero: '))
 
-suma_numeros()
+for i in range(1,num+1):
+    c = i*i
+    print(c)
 
 # Realice un algoritmo que reciba un número natural y a continuación determine si es primo o no.
 
@@ -90,9 +84,16 @@ while True:
         print(factorial_resultado)
 
     if opcion == 2:
-        suma_numeros()
+        lista = []
+        print('cuando quiera dejar de agregar numeros escriba "listo" ')
+        while True:
+            numeros = input('Ingrese el numero: ')
+            if numeros == 'listo':
+                break
+            lista.append(int(numeros))
+        print(sum(lista))
     
-    if opcion == 3:
+    if opcion == 3: 
         lista_promedio = []
         print('cuando quiera dejar de agregar numeros escriba "listo" ')
         while True:
