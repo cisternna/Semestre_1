@@ -38,7 +38,6 @@ if numero < 2:
 for i in range(2, numero):
     if numero%i == 0:
         primo = 0
-
 if primo == 1:
     print('El numero ingresado es primo')
 
@@ -46,7 +45,6 @@ if primo == 1:
 a = 0
 for i in str(numero):
     a += int(i)**len(str(numero))
-
 if numero == a:
     print('El numero ingresado es narciso')
 
